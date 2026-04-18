@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, ArrowUp, MoreHorizontal,
-  VolumeX, Download, XCircle,
+  VolumeX, Download, XCircle, Sparkles,
 } from 'lucide-react';
 
 const BRAND = 'NH International';
