@@ -2,7 +2,7 @@
 # One-shot VPS bootstrap for nhdigitalservices.com on Ubuntu 24.04.
 #
 # Run ONCE as root on a fresh Hostinger VPS:
-#   curl -fsSL https://raw.githubusercontent.com/naqishah8/nhdigitalsolution.com/main/scripts/bootstrap.sh -o bootstrap.sh
+#   curl -fsSL https://raw.githubusercontent.com/naqishah8/nhdigitalservices.com/main/scripts/bootstrap.sh -o bootstrap.sh
 #   sudo bash bootstrap.sh
 #
 # Idempotent — re-running skips steps that are already done.
@@ -13,7 +13,7 @@ set -euo pipefail
 DOMAIN="nhdigitalservices.com"
 APP_USER="deploy"
 APP_DIR="/home/${APP_USER}/site"
-REPO_URL="https://github.com/naqishah8/nhdigitalsolution.com.git"
+REPO_URL="https://github.com/naqishah8/nhdigitalservices.com.git"
 APP_NAME="nhds"
 NODE_MAJOR="20"
 LE_EMAIL="wazeer23@gmail.com"
