@@ -45,3 +45,6 @@ next-env.d.ts
 .vscode/
 .idea/
 
+# Runtime-writable job data (written by admin dashboard, not in source)
+/data/
+

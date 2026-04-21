@@ -250,13 +250,41 @@ export default function AIChat() {
               </div>
 
               <div className="header-actions">
-                <button
-                  className="menu-trigger"
-                  aria-label="Chat options"
-                  onClick={() => setMenuOpen((v) => !v)}
-                >
-                  <MoreHorizontal size={20} />
-                </button>
+                <div className="menu-wrap">
+                  <button
+                    className="menu-trigger"
+                    aria-label="Chat options"
+                    onClick={() => setMenuOpen((v) => !v)}
+                  >
+                    <MoreHorizontal size={20} />
+                  </button>
+
+                  <AnimatePresence>
+                    {menuOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: -6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -6 }}
+                        transition={{ duration: 0.14 }}
+                        className="agent-menu"
+                      >
+                        <button onClick={() => { setMuted((v) => !v); setMenuOpen(false); }}>
+                          <VolumeX size={16} />
+                          <span>{muted ? 'Unmute sound' : 'Mute sound'}</span>
+                        </button>
+                        <button onClick={downloadTranscript}>
+                          <Download size={16} />
+                          <span>Download transcript</span>
+                        </button>
+                        <button onClick={endChat}>
+                          <XCircle size={16} />
+                          <span>End chat</span>
+                        </button>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+
                 <button
                   className="close-btn"
                   aria-label="Close chat"
@@ -264,31 +292,6 @@ export default function AIChat() {
                 >
                   <X size={20} />
                 </button>
-
-                <AnimatePresence>
-                  {menuOpen && (
-                    <motion.div
-                      initial={{ opacity: 0, y: -6 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, y: -6 }}
-                      transition={{ duration: 0.14 }}
-                      className="agent-menu"
-                    >
-                      <button onClick={() => { setMuted((v) => !v); setMenuOpen(false); }}>
-                        <VolumeX size={16} />
-                        <span>{muted ? 'Unmute sound' : 'Mute sound'}</span>
-                      </button>
-                      <button onClick={downloadTranscript}>
-                        <Download size={16} />
-                        <span>Download transcript</span>
-                      </button>
-                      <button onClick={endChat}>
-                        <XCircle size={16} />
-                        <span>End chat</span>
-                      </button>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
               </div>
             </header>
 
@@ -384,9 +387,39 @@ export default function AIChat() {
         )}
       </AnimatePresence>
 
+      {/* Greeting bubble — proactive nudge shown once per visitor after ~2s. */}
+      <AnimatePresence>
+        {tipVisible && !isOpen && (
+          <motion.div
+            key="tip"
+            initial={{ opacity: 0, x: 8, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: 8, scale: 0.95 }}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+            className="tip-bubble"
+            role="status"
+          >
+            <button
+              className="tip-body"
+              onClick={() => { dismissTip(); setIsOpen(true); }}
+              aria-label="Open chat with Nova"
+            >
+              <span className="tip-text">Hi there! Can I help you?</span>
+            </button>
+            <button
+              className="tip-close"
+              onClick={dismissTip}
+              aria-label="Dismiss greeting"
+            >
+              <X size={12} strokeWidth={2.6} />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Launcher — pinned 42px via inline style so nothing can override. */}
       <motion.button
-        onClick={() => setIsOpen((v) => !v)}
+        onClick={() => { dismissTip(); setIsOpen((v) => !v); }}
         className="chat-launcher"
         aria-label={isOpen ? 'Close chat' : `Open chat with ${AGENT_SHORT}`}
         initial={{ opacity: 0, scale: 0.6 }}
@@ -470,6 +503,77 @@ export default function AIChat() {
           right: 22px;
           bottom: 22px;
           z-index: 2700;
+        }
+
+        /* Proactive greeting — speech bubble to the left of the launcher. */
+        .tip-bubble {
+          position: absolute;
+          right: calc(100% + 10px);
+          bottom: 2px;
+          display: flex;
+          align-items: stretch;
+          gap: 4px;
+          white-space: nowrap;
+          filter: drop-shadow(0 8px 20px rgba(15, 23, 42, 0.22));
+        }
+
+        .tip-body {
+          background: white;
+          color: #1f2937;
+          border: 1px solid #e5e7eb;
+          border-radius: 18px;
+          padding: 10px 16px;
+          font-size: 0.86rem;
+          font-weight: 600;
+          font-family: inherit;
+          cursor: pointer;
+          line-height: 1.3;
+          transition: transform 0.18s ease, background 0.18s ease;
+        }
+
+        .tip-body:hover {
+          background: #f8fafc;
+          transform: translateY(-1px);
+        }
+
+        /* Arrow tail pointing at the launcher on the right. */
+        .tip-body::after {
+          content: '';
+          position: absolute;
+          right: -5px;
+          bottom: 14px;
+          width: 10px;
+          height: 10px;
+          background: white;
+          border-right: 1px solid #e5e7eb;
+          border-bottom: 1px solid #e5e7eb;
+          transform: rotate(-45deg);
+        }
+
+        .tip-close {
+          background: #fff;
+          border: 1px solid #e5e7eb;
+          color: #64748b;
+          width: 22px;
+          height: 22px;
+          border-radius: 50%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          align-self: center;
+          flex-shrink: 0;
+          padding: 0;
+          transition: color 0.15s ease, background 0.15s ease;
+        }
+
+        .tip-close:hover {
+          color: #1f2937;
+          background: #f3f4f6;
+        }
+
+        @media (max-width: 480px) {
+          .tip-bubble { display: none; }
         }
 
         /* Launcher — plain white circle, 42px (5% larger than the 40px
@@ -603,10 +707,16 @@ export default function AIChat() {
           background: rgba(255, 255, 255, 0.14);
         }
 
+        .menu-wrap {
+          position: relative;
+        }
+
+        /* Drop down from the 3-dots button itself so the position is
+           predictable regardless of header width. */
         .agent-menu {
           position: absolute;
-          top: 44px;
-          right: 8px;
+          top: calc(100% + 6px);
+          right: 0;
           background: white;
           color: #1f2937;
           border-radius: 14px;
@@ -614,7 +724,7 @@ export default function AIChat() {
           border: 1px solid #e5e7eb;
           padding: 6px;
           min-width: 210px;
-          z-index: 10;
+          z-index: 50;
         }
 
         .agent-menu button {

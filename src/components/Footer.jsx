@@ -24,9 +24,10 @@ export default function Footer() {
             </div>
             <div className="link-group">
               <h4>Company</h4>
-              <a href="#about">About Us</a>
-              <a href="#contact">Contact</a>
-              <a href="#">Privacy Policy</a>
+              <a href="/#about">About Us</a>
+              <a href="/#contact">Contact</a>
+              <Link href="/careers">Careers</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </div>
             {/* NAP block — duplicated here for consistency with structured data */}
             <address className="link-group contact-group">
