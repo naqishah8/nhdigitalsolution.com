@@ -14,11 +14,11 @@ import HeadingAnchor from './HeadingAnchor';
 const FAQS = [
   {
     q: 'How much does a project typically cost?',
-    a: 'It depends on scope. Most websites run between $3K–$15K, brand identities $1.5K–$6K, and apps $12K–$40K+. Every project gets a fixed quote after the free 30-minute call — no hidden extras.',
+    a: 'It depends on scope. Most websites run between $3K and $15K, brand identities $1.5K to $6K, and apps $12K to $40K+. Every project gets a fixed quote after the free 30-minute call, no hidden extras.',
   },
   {
     q: 'How long until my project goes live?',
-    a: 'A simple landing site ships in 2–3 weeks. A full website or rebrand is 5–8 weeks. Apps take 8–16 weeks. We share weekly demos the whole way so you see progress, not status emails.',
+    a: 'A simple landing site ships in 2 to 3 weeks. A full website or rebrand is 5 to 8 weeks. Apps take 8 to 16 weeks. We share weekly demos the whole way so you see progress, not status emails.',
   },
   {
     q: 'Do you work with small businesses and startups?',
@@ -26,11 +26,11 @@ const FAQS = [
   },
   {
     q: 'What happens after launch?',
-    a: 'You own everything — code, design files, domain, analytics. We offer optional monthly care plans (updates, monitoring, content changes, small improvements) but you\'re never locked in.',
+    a: 'You own everything: code, design files, domain, analytics. We offer optional monthly care plans (updates, monitoring, content changes, small improvements) but you\'re never locked in.',
   },
   {
     q: 'Can you handle design and development together?',
-    a: 'Yes — that\'s our default. The designer and engineer on your project sit together and ship weekly. No agency-style handoffs, no translation loss, no waiting on another vendor.',
+    a: 'Yes, that\'s our default. The designer and engineer on your project sit together and ship weekly. No agency-style handoffs, no translation loss, no waiting on another vendor.',
   },
   {
     q: 'How do I get started?',
@@ -159,7 +159,7 @@ export default function HomeFAQ() {
           </HeadingAnchor>
           <p>
             The answers below cover what most founders ask us first. Anything else,
-            ping <a href="#contact">the contact form</a> — we reply within 24 hours.
+            ping <a href="#contact">the contact form</a> and we reply within 24 hours.
           </p>
         </motion.div>
 

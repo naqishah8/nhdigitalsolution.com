@@ -22,7 +22,7 @@ const pillars = [
   },
   {
     title: 'Results you can measure',
-    desc: 'Every project gets tracked goals — speed, rankings, conversions — so you know exactly what you got.',
+    desc: 'Every project gets tracked goals like speed, rankings, and conversions, so you know exactly what you got.',
   },
 ];
 
@@ -40,7 +40,7 @@ export default function About() {
           <HeadingAnchor as="h2" id="why-nh-international">A small studio that <span className="highlight">ships real results</span></HeadingAnchor>
           <p className="lede">
             NH Digital Services is a tight crew of designers and engineers who treat your project like
-            our own. We build websites, apps, and growth systems — and we stick around after launch.
+            our own. We build websites, apps, and growth systems, and we stick around after launch.
           </p>
         </motion.div>
 

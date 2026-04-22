@@ -39,7 +39,7 @@ function LoginForm() {
       }
       router.replace(next);
     } catch {
-      setError('Network error — try again.');
+      setError('Network error. Try again.');
       setLoading(false);
     }
   };

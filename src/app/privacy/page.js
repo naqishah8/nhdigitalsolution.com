@@ -30,20 +30,20 @@ export default function PrivacyPolicyPage() {
           <h2>What we collect</h2>
           <ul>
             <li>
-              <strong>Contact form submissions</strong> — when you fill in the contact form we receive the
+              <strong>Contact form submissions:</strong> when you fill in the contact form we receive the
               name, email address, selected service, and message you provide.
             </li>
             <li>
-              <strong>AI chat conversations</strong> — messages you send to our AI assistant (Nova) are processed
+              <strong>AI chat conversations:</strong> messages you send to our AI assistant (Nova) are processed
               by our model provider (Google Gemini) in order to generate a reply. Transcripts may be retained
               in your own browser (local storage) and on our servers for quality review and product improvement.
             </li>
             <li>
-              <strong>Technical logs</strong> — our servers record standard request information (IP address,
+              <strong>Technical logs:</strong> our servers record standard request information (IP address,
               user agent, timestamp, URL) needed to operate the site securely and to detect abuse.
             </li>
             <li>
-              <strong>Cookies</strong> — we use a minimal set of first-party cookies required for the site to
+              <strong>Cookies:</strong> we use a minimal set of first-party cookies required for the site to
               function (e.g. to remember that you dismissed a notice). We do not use third-party advertising
               cookies.
             </li>

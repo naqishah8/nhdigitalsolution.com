@@ -57,7 +57,7 @@ export default function ServiceSelector() {
                 <span>Perfect match</span>
               </div>
               <h4>{selected.recommendation}</h4>
-              <p>Great pick. We'll turn your {selected.label.toLowerCase()} goals into reality — starting with a free 30-minute consultation.</p>
+              <p>Great pick. We'll turn your {selected.label.toLowerCase()} goals into reality, starting with a free 30-minute consultation.</p>
               <div className="rec-actions">
                 <Link href={`/services/${selected.slug}`} className="btn-primary">
                   Explore {selected.recommendation} <ArrowRight size={16} />
@@ -114,12 +114,15 @@ export default function ServiceSelector() {
 
         .selector-link {
           position: relative;
-          display: block;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           padding: 28px 22px 26px;
           text-align: center;
           text-decoration: none;
           color: inherit;
           height: 100%;
+          min-height: 180px;
         }
 
         .icon-wrapper {
@@ -133,6 +136,7 @@ export default function ServiceSelector() {
           margin: 0 auto 16px;
           color: var(--primary);
           transition: transform 0.3s ease;
+          flex-shrink: 0;
         }
 
         .selector-card:hover .icon-wrapper {
@@ -161,14 +165,21 @@ export default function ServiceSelector() {
           transform: translateX(0);
         }
         
-        h3 {
+        .selector-link h3 {
           font-size: 1.1rem;
-          margin-bottom: 8px;
+          margin: 0 0 8px;
+          line-height: 1.3;
+          min-height: 2.6em;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
-        
+
         .selector-card p {
           font-size: 0.85rem;
           color: #94a3b8;
+          margin: 0;
+          line-height: 1.45;
         }
         
         .recommendation {

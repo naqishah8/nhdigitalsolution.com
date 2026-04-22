@@ -43,7 +43,7 @@ export default function Footer() {
               </p>
               <a href={`tel:${COMPANY.phone.replace(/[^+\d]/g, '')}`}>{COMPANY.phone}</a>
               <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a>
-              <p className="hours">Mon–Fri · 8 AM – 6 PM CT</p>
+              <p className="hours">Mon to Fri · 8 AM to 6 PM CT</p>
             </address>
           </div>
         </div>

@@ -124,7 +124,7 @@ export default function AdminDashboardPage() {
               </div>
 
               <div className="admin-form">
-                <label>Slug (URL) — leave blank to auto-generate</label>
+                <label>Slug (URL), leave blank to auto-generate</label>
                 <input
                   value={editing.slug}
                   onChange={(e) => setEditing({ ...editing, slug: e.target.value })}

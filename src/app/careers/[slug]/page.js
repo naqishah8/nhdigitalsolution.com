@@ -44,7 +44,7 @@ function formatSalary(job) {
       currency: c,
       maximumFractionDigits: 0,
     }).format(n);
-  if (job.salaryMin && job.salaryMax) return `${fmt(job.salaryMin)} – ${fmt(job.salaryMax)} ${unit}`.trim();
+  if (job.salaryMin && job.salaryMax) return `${fmt(job.salaryMin)} to ${fmt(job.salaryMax)} ${unit}`.trim();
   if (job.salaryMin) return `${fmt(job.salaryMin)}+ ${unit}`.trim();
   return `Up to ${fmt(job.salaryMax)} ${unit}`.trim();
 }

@@ -92,11 +92,11 @@ export async function POST(req) {
       );
     }
 
-    const subject = `New inquiry: ${service || 'General'} — ${name}`;
+    const subject = `New inquiry: ${service || 'General'} from ${name}`;
     const text = [
       `Name:    ${name}`,
       `Email:   ${email}`,
-      `Service: ${service || '—'}`,
+      `Service: ${service || 'Not specified'}`,
       '',
       'Message:',
       message,
@@ -106,14 +106,14 @@ export async function POST(req) {
       <table cellpadding="0" cellspacing="0" border="0" style="font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; font-size:14px; line-height:1.6; color:#1f2937;">
         <tr><td style="padding-bottom:12px;"><strong>Name:</strong> ${escapeHtml(name)}</td></tr>
         <tr><td style="padding-bottom:12px;"><strong>Email:</strong> <a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a></td></tr>
-        <tr><td style="padding-bottom:12px;"><strong>Service:</strong> ${escapeHtml(service || '—')}</td></tr>
+        <tr><td style="padding-bottom:12px;"><strong>Service:</strong> ${escapeHtml(service || 'Not specified')}</td></tr>
         <tr><td style="padding-top:8px; border-top:1px solid #e5e7eb;"><strong>Message</strong></td></tr>
         <tr><td style="padding-top:8px; white-space:pre-wrap;">${escapeHtml(message)}</td></tr>
       </table>
     `;
 
     await transporter.sendMail({
-      from: `"NH Digital Services — Website" <${CONTACT_FROM}>`,
+      from: `"NH Digital Services Website" <${CONTACT_FROM}>`,
       to: CONTACT_TO,
       replyTo: `"${name}" <${email}>`,
       subject,

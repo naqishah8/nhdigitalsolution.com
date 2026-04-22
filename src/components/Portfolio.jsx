@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Restaurant Brand Identity',
     category: 'Graphic Design',
-    desc: 'Complete rebrand for a fine dining chain — logo, menu design, signage, and social media kit.',
+    desc: 'Complete rebrand for a fine dining chain: logo, menu design, signage, and social media kit.',
     color: '#3b82f6',
     tags: ['Logo', 'Branding', 'Print'],
     image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=70',

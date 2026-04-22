@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
     return { title: 'Service Not Found' };
   }
 
-  const title = `${service.title} — ${service.tagline}`;
+  const title = `${service.title}: ${service.tagline}`;
   const canonical = `/services/${service.slug}`;
   const ogImage = service.heroImage || COMPANY.ogImage;
 

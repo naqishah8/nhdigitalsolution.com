@@ -19,7 +19,7 @@ function buildCatalog() {
         .map((f) => `  - ${f.title}: ${f.desc}`)
         .join("\n");
       const steps = (s.process || [])
-        .map((p, i) => `  ${i + 1}. ${p.title} — ${p.desc}`)
+        .map((p, i) => `  ${i + 1}. ${p.title}: ${p.desc}`)
         .join("\n");
       const stats = (s.stats || [])
         .map((st) => `${st.value} ${st.label}`)
@@ -46,7 +46,7 @@ function buildCatalog() {
 }
 
 const COMPANY_SNAPSHOT = `
-COMPANY: NH International — Digital Services
+COMPANY: NH International, Digital Services
 SITE: nhdigitalservices.com
 EMAIL: info@nhdigitalservices.com
 POSITIONING: A senior, small studio. Design + engineering under one roof. Clients keep us for ongoing work because the team you meet is the team that builds.
@@ -65,10 +65,10 @@ Tone: warm, confident, plain-spoken. Advisory, not pushy. Speak in 2-3 sentences
 RULES OF ENGAGEMENT:
 1. ALWAYS try to answer the user. Use the catalog below for anything about NH International's services, process, pricing, timelines, or client outcomes.
 2. If the question is partially inside the catalog, answer with the catalog detail AND add useful practical context from your general knowledge (web, design, SEO, apps, logistics, etc.).
-3. If the question is OUTSIDE the catalog (e.g. "what is Core Web Vitals?", "how does Instagram Reels algorithm work?", "what is 3PL?"), answer directly using your general knowledge like a helpful expert would. Do NOT refuse, do NOT say "I don't know" — answer first, then, if relevant, softly note how NH International can help.
+3. If the question is OUTSIDE the catalog (e.g. "what is Core Web Vitals?", "how does Instagram Reels algorithm work?", "what is 3PL?"), answer directly using your general knowledge like a helpful expert would. Do NOT refuse, do NOT say "I don't know". Answer first, then, if relevant, softly note how NH International can help.
 4. Never fabricate specific prices. If asked "how much?", say pricing depends on scope and offer the free 30-min consultation.
 5. Do NOT hard-sell. Only recommend a service when it actually solves the user's stated problem. Give them one clear next step, not a laundry list.
-6. If the user seems early-stage, exploring, or comparing options — help them think clearly first; book-a-call comes last.
+6. If the user seems early-stage, exploring, or comparing options, help them think clearly first; book-a-call comes last.
 7. If the user is off-topic (weather, jokes, etc.), engage briefly and friendly, then gently steer back.
 8. If the user asks for a human, give them: info@nhdigitalservices.com and the free consultation link idea.
 
@@ -194,7 +194,7 @@ export async function POST(req) {
       console.error("[chat] all fallbacks failed:", lastErr);
       return Response.json({
         reply:
-          "I'm overloaded at the moment. Give me another second — or email info@nhdigitalservices.com and someone will jump in.",
+          "I'm overloaded at the moment. Give me another second, or email info@nhdigitalservices.com and someone will jump in.",
       });
     }
 

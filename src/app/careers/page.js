@@ -31,7 +31,7 @@ export default function CareersPage() {
           <h1>Join the team</h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.05rem', lineHeight: 1.7 }}>
             We&rsquo;re a small crew of senior designers and engineers. No agency layers,
-            no handoffs — just people who build. Here&rsquo;s what we&rsquo;re hiring for right now.
+            no handoffs, just people who build. Here&rsquo;s what we&rsquo;re hiring for right now.
           </p>
         </header>
 
@@ -41,7 +41,7 @@ export default function CareersPage() {
             <p>
               We don&rsquo;t have any roles listed at the moment. If you think you&rsquo;d be a
               great fit for the team anyway, email us at{' '}
-              <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> — we always want
+              <a href={`mailto:${COMPANY.email}`}>{COMPANY.email}</a> and we always want
               to meet sharp people.
             </p>
           </section>

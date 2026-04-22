@@ -24,7 +24,7 @@ export const services = {
     showcaseImage: 'https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=900&q=70',
     detailImage: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=900&q=70',
     audienceImage: '/images/services/web-development-audience.webp',
-    idealFor: 'Perfect for any business that wants a faster, more modern website — whether you\'re launching your first site, replacing an outdated one, opening an online store, or simply tired of losing customers to slow loading times.',
+    idealFor: 'Perfect for any business that wants a faster, more modern website, whether you\'re launching your first site, replacing an outdated one, opening an online store, or simply tired of losing customers to slow loading times.',
     painPoints: [
       'Your current site loads slowly',
       'You rank poorly on Google',
@@ -39,7 +39,7 @@ export const services = {
     ],
     features: [
       { icon: Rocket, title: 'Blazing Fast', desc: 'Sub-second load times with server-side rendering and edge optimization.' },
-      { icon: Layout, title: 'Responsive Design', desc: 'Pixel-perfect on every screen — desktop, tablet, and mobile.' },
+      { icon: Layout, title: 'Responsive Design', desc: 'Pixel-perfect on every screen: desktop, tablet, and mobile.' },
       { icon: ShoppingCart, title: 'E-Commerce Ready', desc: 'Full shopping experiences with Stripe, inventory, and checkout.' },
       { icon: FileCode, title: 'Clean Code', desc: 'Maintainable, scalable codebases built with modern best practices.' },
       { icon: Database, title: 'CMS Integration', desc: 'Easy content management with headless CMS solutions.' },
@@ -57,7 +57,7 @@ export const services = {
       { q: 'What technologies do you use?', a: 'We primarily build with Next.js, React, and TypeScript. For backends, we use Node.js, PostgreSQL, and serverless functions. Everything is deployed on Vercel or AWS.' },
       { q: 'Do you provide hosting?', a: 'Yes! We handle deployment and can manage hosting for you. We typically deploy to Vercel for optimal Next.js performance, but can work with any provider.' },
       { q: 'Can you redesign my existing website?', a: 'Absolutely. We can do a full redesign or incremental improvements. We will audit your current site first and recommend the best approach.' },
-      { q: 'What about SEO?', a: 'Every site we build is SEO-optimized out of the box — fast loading, semantic HTML, meta tags, structured data, and sitemap generation.' },
+      { q: 'What about SEO?', a: 'Every site we build is SEO-optimized out of the box: fast loading, semantic HTML, meta tags, structured data, and sitemap generation.' },
       { q: 'Do you offer maintenance plans?', a: 'Yes. We offer monthly maintenance packages that include updates, security patches, performance monitoring, and content changes.' },
     ],
     stats: [
@@ -79,7 +79,7 @@ export const services = {
     showcaseImage: 'https://images.unsplash.com/photo-1561070791-2526d30994b8?w=900&q=70',
     detailImage: 'https://images.unsplash.com/photo-1558655146-d09347e92766?w=900&q=70',
     audienceImage: '/images/services/graphic-design-audience.webp',
-    idealFor: 'Perfect for any business ready to look professional — whether you\'re naming a brand new company, upgrading a DIY logo, refreshing a dated look, or simply want visuals that finally match the quality of your work.',
+    idealFor: 'Perfect for any business ready to look professional, whether you\'re naming a brand new company, upgrading a DIY logo, refreshing a dated look, or simply want visuals that finally match the quality of your work.',
     painPoints: [
       'Your logo looks amateur or inconsistent',
       'Competitors feel more polished than you',
@@ -94,7 +94,7 @@ export const services = {
     ],
     features: [
       { icon: Brush, title: 'Logo Design', desc: 'Unique, scalable logos that capture your brand essence.' },
-      { icon: Palette, title: 'Brand Identity', desc: 'Complete brand systems — colors, typography, guidelines.' },
+      { icon: Palette, title: 'Brand Identity', desc: 'Complete brand systems: colors, typography, guidelines.' },
       { icon: Image, title: 'Marketing Materials', desc: 'Flyers, banners, social graphics, and print collateral.' },
       { icon: Type, title: 'Typography', desc: 'Custom type selection and pairing that sets the right tone.' },
       { icon: Layers, title: 'UI/UX Design', desc: 'App and website interfaces designed for clarity and delight.' },
@@ -105,7 +105,7 @@ export const services = {
       { title: 'Mood Boards', desc: 'Visual direction proposals with colors, typography, and style references.' },
       { title: 'Concept Design', desc: 'Multiple design concepts for you to choose from and refine.' },
       { title: 'Refinement', desc: 'Iterating on your chosen direction until every detail is perfect.' },
-      { title: 'Delivery', desc: 'All files in every format you need — print, web, social, and source files.' },
+      { title: 'Delivery', desc: 'All files in every format you need: print, web, social, and source files.' },
     ],
     faqs: [
       { q: 'How many logo concepts do I get?', a: 'We provide 3 unique logo concepts in the first round, then refine your chosen direction through 2 revision rounds.' },
@@ -133,7 +133,7 @@ export const services = {
     showcaseImage: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=900&q=70',
     detailImage: 'https://images.unsplash.com/photo-1543286386-713bdd548da4?w=900&q=70',
     audienceImage: '/images/services/seo-optimization-audience.webp',
-    idealFor: 'Perfect for any business that wants more customers finding them online — local shops competing on Google Maps, stores stuck on page two, or service brands that depend on search traffic to grow.',
+    idealFor: 'Perfect for any business that wants more customers finding them online: local shops competing on Google Maps, stores stuck on page two, or service brands that depend on search traffic to grow.',
     painPoints: [
       'You\'re invisible on Google',
       'Competitors rank above you',
@@ -144,7 +144,7 @@ export const services = {
       'Rank higher for the keywords that drive sales',
       'Get found by local customers on Google Maps',
       'Turn blog traffic into real enquiries',
-      'Clear monthly reports — no jargon',
+      'Clear monthly reports, no jargon',
     ],
     features: [
       { icon: TrendingUp, title: 'Keyword Strategy', desc: 'Research-backed keyword targeting for maximum search visibility.' },
@@ -163,8 +163,8 @@ export const services = {
     ],
     faqs: [
       { q: 'How long until I see results?', a: 'SEO is a long-term strategy. You will typically see initial improvements in 2-3 months, with significant results in 4-6 months. We provide monthly reports so you can track progress.' },
-      { q: 'Do you guarantee first page rankings?', a: 'No ethical SEO agency can guarantee specific rankings — Google\'s algorithm has 200+ factors. What we guarantee is a professional, data-driven approach that consistently improves your visibility.' },
-      { q: 'What is included in the free SEO audit?', a: 'A comprehensive analysis of your site\'s technical health, keyword rankings, content quality, backlink profile, and competitor positioning — delivered as an actionable report.' },
+      { q: 'Do you guarantee first page rankings?', a: 'No ethical SEO agency can guarantee specific rankings. Google\'s algorithm has 200+ factors. What we guarantee is a professional, data-driven approach that consistently improves your visibility.' },
+      { q: 'What is included in the free SEO audit?', a: 'A comprehensive analysis of your site\'s technical health, keyword rankings, content quality, backlink profile, and competitor positioning, delivered as an actionable report.' },
       { q: 'Do you handle content creation?', a: 'Yes! Our team writes SEO-optimized blog posts, landing pages, and web copy as part of our content strategy.' },
       { q: 'How do you report progress?', a: 'Monthly reports with keyword rankings, organic traffic, conversions, and technical health metrics. Plus a strategy call to discuss next steps.' },
     ],
@@ -187,17 +187,17 @@ export const services = {
     showcaseImage: 'https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=900&q=70',
     detailImage: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=900&q=70',
     audienceImage: 'https://images.unsplash.com/photo-1557838923-2985c318be48?w=900&q=70',
-    idealFor: 'Perfect for brands that know social media matters but can\'t run it consistently — D2C stores, restaurants, creators, and service businesses ready to hand it off to a team that actually gets it.',
+    idealFor: 'Perfect for brands that know social media matters but can\'t run it consistently: D2C stores, restaurants, creators, and service businesses ready to hand it off to a team that actually gets it.',
     painPoints: [
       'Posting is inconsistent',
       'Content doesn\'t convert followers',
       'Ad spend isn\'t paying back',
-      'You have no strategy — just guessing',
+      'You have no strategy, just guessing',
     ],
     outcomes: [
       'A steady content rhythm that builds trust',
       'Real engagement, not vanity follower counts',
-      'Paid ads that pay back — not just spend',
+      'Paid ads that pay back, not just spend',
       'Content your audience wants to share',
     ],
     features: [
@@ -217,8 +217,8 @@ export const services = {
     ],
     faqs: [
       { q: 'Which platforms do you manage?', a: 'Instagram, TikTok, Facebook, LinkedIn, X (Twitter), and YouTube. We recommend focusing on 2-3 platforms where your audience is most active.' },
-      { q: 'Do you create all the content?', a: 'Yes — graphics, video editing, copywriting, and hashtag strategy. We handle everything from ideation to posting.' },
-      { q: 'How quickly will I see follower growth?', a: 'Organic growth takes time — expect noticeable growth in 2-3 months. With paid campaigns, you can see results within the first week.' },
+      { q: 'Do you create all the content?', a: 'Yes: graphics, video editing, copywriting, and hashtag strategy. We handle everything from ideation to posting.' },
+      { q: 'How quickly will I see follower growth?', a: 'Organic growth takes time. Expect noticeable growth in 2-3 months. With paid campaigns, you can see results within the first week.' },
       { q: 'Do you run paid ads?', a: 'Yes! We manage ad campaigns on Meta (Instagram/Facebook), TikTok, and LinkedIn with transparent reporting on spend and ROI.' },
       { q: 'Can I approve content before it goes live?', a: 'Absolutely. We share a content calendar in advance and nothing goes live without your approval.' },
     ],
@@ -233,7 +233,7 @@ export const services = {
     slug: 'app-development',
     title: 'App Development',
     tagline: 'Apps People Actually Love Using',
-    description: 'Cross-platform mobile apps built with React Native — smooth, fast, and designed to keep users coming back.',
+    description: 'Cross-platform mobile apps built with React Native: smooth, fast, and designed to keep users coming back.',
     icon: Smartphone,
     color: '#60a5fa',
     gradient: 'linear-gradient(135deg, #60a5fa, #2563eb)',
@@ -241,7 +241,7 @@ export const services = {
     showcaseImage: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=900&q=70',
     detailImage: 'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=900&q=70',
     audienceImage: '/images/services/app-development-audience.webp',
-    idealFor: 'Perfect for any team that wants a mobile experience worth shipping — startups testing a product idea, businesses adding a mobile channel, or brands rebuilding a buggy legacy app with modern tech.',
+    idealFor: 'Perfect for any team that wants a mobile experience worth shipping: startups testing a product idea, businesses adding a mobile channel, or brands rebuilding a buggy legacy app with modern tech.',
     painPoints: [
       'Your existing app feels dated',
       'iOS + Android is too expensive',
@@ -255,7 +255,7 @@ export const services = {
       'Analytics baked in so you know what works',
     ],
     features: [
-      { icon: TabletSmartphone, title: 'Cross-Platform', desc: 'One codebase for both iOS and Android — faster delivery, lower cost.' },
+      { icon: TabletSmartphone, title: 'Cross-Platform', desc: 'One codebase for both iOS and Android: faster delivery, lower cost.' },
       { icon: Zap, title: '60fps Smooth', desc: 'Native-quality performance with fluid animations and gestures.' },
       { icon: BellRing, title: 'Push Notifications', desc: 'Keep users engaged with smart, personalized notifications.' },
       { icon: CloudUpload, title: 'Cloud Sync', desc: 'Real-time data sync across devices with offline support.' },
@@ -272,7 +272,7 @@ export const services = {
     faqs: [
       { q: 'iOS, Android, or both?', a: 'We build for both platforms simultaneously using React Native. You get native performance on both iOS and Android from a single codebase.' },
       { q: 'How long does app development take?', a: 'A simple app takes 6-10 weeks. Complex apps with custom backends, integrations, and advanced features can take 12-20 weeks.' },
-      { q: 'Do you handle App Store submission?', a: 'Yes — we handle the entire submission process for both Apple App Store and Google Play, including screenshots, descriptions, and compliance.' },
+      { q: 'Do you handle App Store submission?', a: 'Yes, we handle the entire submission process for both Apple App Store and Google Play, including screenshots, descriptions, and compliance.' },
       { q: 'Can you add features to my existing app?', a: 'Yes! We can audit your existing app and add new features, improve performance, or do a complete overhaul.' },
       { q: 'What about ongoing maintenance?', a: 'We offer maintenance plans covering OS updates, bug fixes, performance monitoring, and feature additions.' },
     ],
@@ -295,7 +295,7 @@ export const services = {
     showcaseImage: 'https://images.unsplash.com/photo-1601598851547-4302969d0614?w=900&q=70',
     detailImage: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=900&q=70',
     audienceImage: '/images/services/logistics-audience.webp',
-    idealFor: 'Perfect for any operation that moves goods — e-commerce brands shipping at scale, distributors running multiple warehouses, and 3PLs that need full visibility across an end-to-end supply chain.',
+    idealFor: 'Perfect for any operation that moves goods: e-commerce brands shipping at scale, distributors running multiple warehouses, and 3PLs that need full visibility across an end-to-end supply chain.',
     painPoints: [
       'Manual routing wastes hours',
       'You have no real-time visibility',
@@ -325,7 +325,7 @@ export const services = {
     ],
     faqs: [
       { q: 'What kind of businesses do you serve?', a: 'E-commerce brands, distributors, 3PLs, and any business that ships products. We scale from small operations to enterprise-level logistics.' },
-      { q: 'Can you integrate with our existing systems?', a: 'Yes — we integrate with popular ERPs (SAP, NetSuite), shipping carriers (FedEx, UPS, DHL), and WMS platforms via API.' },
+      { q: 'Can you integrate with our existing systems?', a: 'Yes, we integrate with popular ERPs (SAP, NetSuite), shipping carriers (FedEx, UPS, DHL), and WMS platforms via API.' },
       { q: 'Do you build custom platforms or use existing software?', a: 'Both. We can customize off-the-shelf solutions or build a fully custom platform depending on your needs and budget.' },
       { q: 'How do you handle data security?', a: 'Enterprise-grade encryption, role-based access, audit logs, and compliance with industry standards (SOC 2, GDPR).' },
       { q: 'What ROI can we expect?', a: 'Our clients typically see 15-30% reduction in operational costs and 40% faster processing times within the first 6 months.' },

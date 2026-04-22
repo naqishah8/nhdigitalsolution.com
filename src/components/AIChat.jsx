@@ -159,7 +159,7 @@ export default function AIChat() {
       } else {
         setMessages((prev) => [...prev, {
           role: 'assistant',
-          content: 'I didn\'t catch that — could you rephrase? If this keeps happening, email info@nhdigitalservices.com.',
+          content: 'I didn\'t catch that. Could you rephrase? If this keeps happening, email info@nhdigitalservices.com.',
           ts: nowLabel(),
         }]);
       }
@@ -168,8 +168,8 @@ export default function AIChat() {
       setMessages((prev) => [...prev, {
         role: 'assistant',
         content: isAbort
-          ? 'That took too long — can you try again? If it happens twice in a row, email info@nhdigitalservices.com.'
-          : 'Network hiccup — try again or email info@nhdigitalservices.com.',
+          ? 'That took too long. Can you try again? If it happens twice in a row, email info@nhdigitalservices.com.'
+          : 'Network hiccup. Try again or email info@nhdigitalservices.com.',
         ts: nowLabel(),
       }]);
     } finally {

@@ -26,7 +26,7 @@ export async function GET() {
 
 ${COMPANY.shortName} is a senior studio building fast, high-converting websites,
 brand systems, mobile apps, SEO, social media, and logistics platforms. We ship
-design and engineering under one roof — the team you meet is the team that
+design and engineering under one roof, so the team you meet is the team that
 builds.
 
 ## Contact

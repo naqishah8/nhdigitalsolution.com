@@ -55,7 +55,7 @@ export default function Contact() {
     if (!formData.captcha.trim()) {
       newErrors.captcha = 'Please solve the challenge';
     } else if (!Number.isFinite(parsed) || parsed !== challenge.answer) {
-      newErrors.captcha = 'That doesn\'t look right — try again';
+      newErrors.captcha = 'That doesn\'t look right. Try again.';
     }
 
     setErrors(newErrors);
@@ -111,7 +111,7 @@ export default function Contact() {
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
         setStatus('error');
-        setErrors({ captcha: data.error || 'Could not send — please try again.' });
+        setErrors({ captcha: data.error || 'Could not send. Please try again.' });
         setChallenge(makeChallenge());
         setFormData((p) => ({ ...p, captcha: '' }));
         return;
@@ -122,7 +122,7 @@ export default function Contact() {
       setChallenge(makeChallenge());
     } catch (err) {
       setStatus('error');
-      setErrors({ captcha: 'Network error — please try again.' });
+      setErrors({ captcha: 'Network error. Please try again.' });
     }
   };
 
@@ -160,7 +160,7 @@ export default function Contact() {
               <div className="success-msg">
                 <CheckCircle size={48} color="#10b981" />
                 <h3>Message sent!</h3>
-                <p>Thanks — we received your message and will get back to you within 24 hours.</p>
+                <p>Thanks! We received your message and will get back to you within 24 hours.</p>
                 <button
                   type="button"
                   className="btn-primary"
